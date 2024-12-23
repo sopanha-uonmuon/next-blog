@@ -1,13 +1,11 @@
 'use client'
 
 import { ThemeContext } from '@/context/ThemeContext'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useContext } from 'react'
 
 const ThemeProvider = ({children}) => {
-
-    const {theme} = useState(ThemeContext)
+    const {theme} = useContext(ThemeContext)
     const [mounted, setMounted] = useState(false)
-
     useEffect(()=>{
         setMounted(true)
     },[])
