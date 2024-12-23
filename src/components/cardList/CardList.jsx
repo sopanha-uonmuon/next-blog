@@ -3,7 +3,8 @@ import styles from './cardlist.module.css'
 import Pagination from '../pagination/Pagination'
 const CardList = () => {
 	return (
-		<div className={styles.container}>CardList
+		<div className={styles.container}>
+			CardList
 			<Pagination/>
 		</div>
 	)
